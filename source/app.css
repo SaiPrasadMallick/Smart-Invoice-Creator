@@ -8,6 +8,8 @@ body, html {
   body,
   html,
   #root,
+  /* .App,
+  .App-header, */
   .App {
     min-height: 100vh
   }
@@ -70,6 +72,12 @@ body, html {
   }
   .form-control:hover {
     background: #f5f7f9;
+  }
+  .form-control:focus {
+    background: #f5f7f9;
+    box-shadow: none;
+    border: none;
+    outline: none
   }
   .form-control::placeholder,
   .form-control::-ms-input-placeholder,
