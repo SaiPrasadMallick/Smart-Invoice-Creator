@@ -68,7 +68,6 @@ class invForm extends React.Component {
       items: [...prevState.items, newItem]
     }));
   }
-
   handleCalculateTotal() {
     var items = this.state.items;
     var subTotal = 0;
@@ -131,7 +130,7 @@ class invForm extends React.Component {
     this.handleCalculateTotal()
     this.setState({isOpen: true})
   };
-  
+
   closeModal = (event) => this.setState({isOpen: false});
   render() {
     return (<Form onSubmit={this.openModal}>
