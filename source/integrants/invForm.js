@@ -63,10 +63,12 @@ class invForm extends React.Component {
       description: '',
       quantity: 1
     };
+
     this.setState(prevState => ({
       items: [...prevState.items, newItem]
     }));
   }
+
   handleCalculateTotal() {
     var items = this.state.items;
     var subTotal = 0;
@@ -92,6 +94,7 @@ class invForm extends React.Component {
     });
 
   };
+
   onItemizedItemEdit(evt) {
     var item = {
       id: evt.target.id,
@@ -107,23 +110,28 @@ class invForm extends React.Component {
       }
       return items;
     });
+
     this.setState({items: newItems});
     this.handleCalculateTotal();
   };
+
   editField = (event) => {
     this.setState({
       [event.target.name]: event.target.value
     });
     this.handleCalculateTotal();
   };
+
   onCurrencyChange = (selectedOption) => {
     this.setState(selectedOption);
   };
+
   openModal = (event) => {
     event.preventDefault()
     this.handleCalculateTotal()
     this.setState({isOpen: true})
   };
+  
   closeModal = (event) => this.setState({isOpen: false});
   render() {
     return (<Form onSubmit={this.openModal}>
