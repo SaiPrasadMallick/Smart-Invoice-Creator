@@ -25,7 +25,7 @@ Smart Invoice Creator is an invoicing tool designed to simplify and streamline y
 4. Review the generated invoice and make adjustments if needed.
 5. Save, download, or share your professional invoice.
 
-## Technologies Used
+## Tools Used
 
 - React
 - Bootstrap
